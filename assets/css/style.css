@@ -17,30 +17,31 @@ html, body {
 }
 
 .header {
+    display: flex;
     background-color: var(--charcoal);
     padding: 4px 2px;
     border-bottom: 8px solid var(--persian-green);
     color: var(--sandy-brown);
     overflow: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.header h1, .header ul {
-    vertical-align: middle;
+.header h1 {
+    margin-left: 20px;
 }
 
 .header ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .header ul li {
     display: inline;
     margin-right: 20px;
     font-size: 20px;
-
 }
 
 .header ul li a{
@@ -48,24 +49,121 @@ html, body {
     text-decoration: none;
 }
 
-section {
+main {
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .about-me {
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    width: 60%;
 }
 
 .about-me img {
-    height: 200px;
-    width: 200px;
+    display: flex;
+    margin-left: 40%;
+    width: 20%;
 }
 
 .portfolio {
+    display: flex;
+    width: 40%;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.first-project-row {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.first-project {
+    display: flex;
+    background-color: var(--charcoal);
+    color: var(--sandy-brown);
+    padding: 10px;
+    width: 20%;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.first-project-anchor {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.portfolio-img {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 4px solid var(--persian-green);
+    flex-wrap: wrap;
+}
+
+.second-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.battleboats, .adventurers {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.second-row {
+    display: flex;
+    background-color: var(--charcoal);
+    color: var(--sandy-brown);
+    padding: 10px;
+    width: 50%;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.second-row-anchor {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+
 }
 
 .contact {
     text-align: center;
     flex-direction: column;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--charcoal);
+    padding: 10px 2px;
+    border-top: 5px solid var(--persian-green);
+}
+
+@media screen and (max-width: 992px) {
+    .about-me {
+        width: 100%;
+    }
+    .portfolio {
+        width: 100%;
+    }
+    .header {
+        justify-content: center;
+    }
 }
