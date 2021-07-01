@@ -8,5 +8,5 @@ This is a portfolio webpage created with HTML and styled with CSS. This portfoli
 ![](assets/images/webpage_screenshot.JPG)
 **Above is a screenshot that shows the layout of the webpage as well as the aforementioned sections.**
 
-Link to deployed webpage: 
+Link to deployed webpage: https://zacharyjg00.github.io/hw-02-portfolio/
 
