@@ -118,7 +118,7 @@ main {
     width: 100%;
 }
 
-.battleboats, .adventurers {
+.railway-express, .adventurers {
     display: flex;
     padding: 10px;
     flex-direction: row;
